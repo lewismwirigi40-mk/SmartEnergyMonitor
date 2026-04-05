@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Energy Monitor</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="page-shell">
+        <header class="hero">
+            <p class="eyebrow">Portfolio Project</p>
+            <h1>Smart Energy Monitor</h1>
+            <p class="hero-copy">
+                A simple digital twin that simulates voltage, current, and power readings
+                for a Kenyan 230V grid and displays them in real time.
+            </p>
+            <div class="hero-meta">
+                <span>Nyeri, Kenya</span>
+                <span>Python + Matplotlib</span>
+                <span>Live Simulation</span>
+            </div>
+        </header>
+
+        <main>
+            <section class="panel grid">
+                <article class="card">
+                    <h2>What It Does</h2>
+                    <p>
+                        The system generates simulated sensor readings, calculates power,
+                        and updates a live dashboard continuously.
+                    </p>
+                </article>
+                <article class="card">
+                    <h2>Core Features</h2>
+                    <ul>
+                        <li>Simulated voltage and current readings</li>
+                        <li>Real-time power calculation</li>
+                        <li>Live console output</li>
+                        <li>Matplotlib dashboard charts</li>
+                    </ul>
+                </article>
+            </section>
+
+            <section class="panel steps">
+                <div class="section-heading">
+                    <p class="eyebrow">Quick Start</p>
+                    <h2>Run It Locally</h2>
+                </div>
+                <div class="card">
+                    <ol>
+                        <li>Install dependencies with <code>pip install -r requirements.txt</code></li>
+                        <li>Start the app with <code>python main.py</code></li>
+                        <li>Watch the live readings and graphs update every second</li>
+                    </ol>
+                </div>
+            </section>
+
+            <section class="panel screenshot-panel">
+                <div class="section-heading">
+                    <p class="eyebrow">Preview</p>
+                    <h2>Sample Dashboard Screenshot</h2>
+                </div>
+                <div class="screenshot-card">
+                    <img src="assets/dashboard-preview.png" alt="Smart Energy Monitor dashboard preview">
+                </div>
+            </section>
+
+            <section class="panel stats">
+                <div class="stat-card">
+                    <span class="stat-value">230V</span>
+                    <span class="stat-label">Nominal Grid</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-value">1s</span>
+                    <span class="stat-label">Refresh Rate</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-value">100%</span>
+                    <span class="stat-label">Software Based</span>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <p>Built by Lewis Mwirigi as a simple smart energy monitoring portfolio project.</p>
+            <button id="theme-toggle" type="button">Switch Accent</button>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
